@@ -1,48 +1,25 @@
 import 'package:flutter/material.dart';
-class RechargeAndPayBill extends StatelessWidget {
-  var payItemImg=[
-    "assets/images/recharge.png",
-    "assets/images/dth.png",
-    "assets/images/electricity.png",
-    "assets/images/creditcard.png",
-    "assets/images/postpaid.png",
-    "assets/images/landline.png",
-    "assets/images/broadband.png",
-    "assets/images/gas.png",
-    "assets/images/water.png",
-    "assets/images/datacard.png",
-    "assets/images/insurance.png",
-    "assets/images/muncipaltax.png",
-    "assets/images/googleplay.png",
-    "assets/images/giftcardd.png",
-  ];
-  var payItemTitle=[
-    "Recharge","DTH","Electricity","Credit Card",
-    "Postpaid","Landline","Broadband","Gas",
-    "Water","Datacard","Insurence","Municipal\nTax",
-    "Google Play","Buy Gift\nCards"
-  ];
+class Insurence extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
     return Card(
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(5.0),),
-      margin: EdgeInsets.only(left: 8,right: 8,top: 5),
+      margin: EdgeInsets.only(left: 8,right: 8,top: 5,bottom: 50),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
-        // mainAxisAlignment: MainAxisAlignment.start,
         children: [
           Container(
             width: MediaQuery.of(context).size.width,
             child: Text(
-              'Recharge and Pay Bills',
+              'Insurence',
               style: TextStyle(fontSize: 13, fontWeight: FontWeight.bold),
             ),
             padding: EdgeInsets.only(left: 15, top: 15),
           ),
           Padding(
-            padding: const EdgeInsets.only(top: 15.0),
+            padding: const EdgeInsets.only(top: 15.0,bottom: 16),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -51,13 +28,13 @@ class RechargeAndPayBill extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.center,
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: <Widget>[
-                      Image.asset(payItemImg[0],
-                        width: 30,
-                        height: 30,),
+                      Image.asset("assets/images/zomato.png",
+                        width: 40,
+                        height: 40,),
                       Padding(
                         padding: const EdgeInsets.only(top: 4),
                         child: Text(
-                          payItemTitle[0],
+                          "Zomato",
                           textAlign: TextAlign.center,
                           style: TextStyle(fontSize: 11),
                         ),
@@ -70,13 +47,13 @@ class RechargeAndPayBill extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.center,
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: <Widget>[
-                      Image.asset(payItemImg[1],
+                      Image.asset("assets/images/book.png",
                         width: 30,
                         height: 30,),
                       Padding(
                         padding: const EdgeInsets.only(top: 4),
                         child: Text(
-                          payItemTitle[1],
+                          "RummyCircle",
                           textAlign: TextAlign.center,
                           style: TextStyle(fontSize: 11),
                         ),
@@ -88,13 +65,13 @@ class RechargeAndPayBill extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.center,
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: <Widget>[
-                      Image.asset(payItemImg[2],
+                      Image.asset("assets/images/book.png",
                         width: 30,
                         height: 30,),
                       Padding(
                         padding: const EdgeInsets.only(top: 4),
                         child: Text(
-                          payItemTitle[2],
+                          "Domino's",
                           textAlign: TextAlign.center,
                           style: TextStyle(fontSize: 11),
                         ),
@@ -106,13 +83,13 @@ class RechargeAndPayBill extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.center,
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: <Widget>[
-                      Image.asset(payItemImg[3],
+                      Image.asset("assets/images/book.png",
                         width: 30,
                         height: 30,),
                       Padding(
                         padding: const EdgeInsets.only(top: 4),
                         child: Text(
-                          payItemTitle[3],
+                          "Swiggy",
                           textAlign: TextAlign.center,
                           style: TextStyle(fontSize: 11),
                         ),
@@ -123,7 +100,7 @@ class RechargeAndPayBill extends StatelessWidget {
             ),
           ),
           Padding(
-            padding: const EdgeInsets.only(top: 15.0),
+            padding: const EdgeInsets.only(top: 15.0,bottom: 16),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -132,95 +109,13 @@ class RechargeAndPayBill extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.center,
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: <Widget>[
-                      Image.asset(payItemImg[4],
-                        width: 30,
-                        height: 30,),
+                      Image.asset("assets/images/zomato.png",
+                        width: 40,
+                        height: 40,),
                       Padding(
                         padding: const EdgeInsets.only(top: 4),
                         child: Text(
-                          payItemTitle[4],
-                          textAlign: TextAlign.center,
-                          style: TextStyle(fontSize: 11),
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-                Expanded(
-                  child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  children: <Widget>[
-                    Image.asset(payItemImg[5],
-                      width: 30,
-                      height: 30,),
-                    Padding(
-                      padding: const EdgeInsets.only(top: 4),
-                      child: Text(
-                        payItemTitle[5],
-                        textAlign: TextAlign.center,
-                        style: TextStyle(fontSize: 11),
-                      ),
-                    ),
-                  ],
-                ),),
-                Expanded(
-                  child:Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  children: <Widget>[
-                    Image.asset(payItemImg[6],
-                      width: 30,
-                      height: 30,),
-                    Padding(
-                      padding: const EdgeInsets.only(top: 4),
-                      child: Text(
-                        payItemTitle[6],
-                        textAlign: TextAlign.center,
-                        style: TextStyle(fontSize: 11),
-                      ),
-                    ),
-                  ],
-                ),),
-                Expanded(
-                  child:Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  children: <Widget>[
-                    Image.asset(payItemImg[7],
-                      width: 30,
-                      height: 30,),
-                    Padding(
-                      padding: const EdgeInsets.only(top: 4),
-                      child: Text(
-                        payItemTitle[7],
-                        textAlign: TextAlign.center,
-                        style: TextStyle(fontSize: 11),
-                      ),
-                    ),
-                  ],
-                ),),
-              ],
-            ),
-          ),
-
-          Padding(
-            padding: const EdgeInsets.only(top: 15.0,bottom: 20),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Expanded(
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    children: <Widget>[
-                      Image.asset(payItemImg[8],
-                        width: 30,
-                        height: 30,),
-                      Padding(
-                        padding: const EdgeInsets.only(top: 4),
-                        child: Text(
-                          payItemTitle[8],
+                          "Zomato",
                           textAlign: TextAlign.center,
                           style: TextStyle(fontSize: 11),
                         ),
@@ -233,13 +128,13 @@ class RechargeAndPayBill extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.center,
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: <Widget>[
-                      Image.asset(payItemImg[9],
+                      Image.asset("assets/images/book.png",
                         width: 30,
                         height: 30,),
                       Padding(
                         padding: const EdgeInsets.only(top: 4),
                         child: Text(
-                          payItemTitle[9],
+                          "RummyCircle",
                           textAlign: TextAlign.center,
                           style: TextStyle(fontSize: 11),
                         ),
@@ -251,13 +146,13 @@ class RechargeAndPayBill extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.center,
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: <Widget>[
-                      Image.asset(payItemImg[10],
+                      Image.asset("assets/images/book.png",
                         width: 30,
                         height: 30,),
                       Padding(
                         padding: const EdgeInsets.only(top: 4),
                         child: Text(
-                          payItemTitle[10],
+                          "Domino's",
                           textAlign: TextAlign.center,
                           style: TextStyle(fontSize: 11),
                         ),
@@ -269,13 +164,13 @@ class RechargeAndPayBill extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.center,
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: <Widget>[
-                      Image.asset(payItemImg[11],
+                      Image.asset("assets/images/book.png",
                         width: 30,
                         height: 30,),
                       Padding(
                         padding: const EdgeInsets.only(top: 4),
                         child: Text(
-                          payItemTitle[11],
+                          "Swiggy",
                           textAlign: TextAlign.center,
                           style: TextStyle(fontSize: 11),
                         ),
@@ -285,8 +180,6 @@ class RechargeAndPayBill extends StatelessWidget {
               ],
             ),
           ),
-
-
         ],
       ),
     );

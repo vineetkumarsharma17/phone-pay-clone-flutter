@@ -30,17 +30,18 @@ class _BottomBarState extends State<BottomBar> {
         curveSize: 80,
         activeColor: Colors.yellow,
         items: [
-              TabItem(icon: Icon(Icons.home),
+              TabItem(icon: Icon(Icons.home,color: Colors.white,),
               title: "Home"),
-              TabItem(icon: Icon(Icons.store),
+              TabItem(icon: Icon(Icons.store,color: Colors.white,),
                   title: "Store"),
-              TabItem(icon: Icon(Icons.qr_code_scanner,size: 40,),
+              TabItem(icon: Icon(Icons.qr_code_scanner,color: Colors.white,size: 40,),
                   title: "Scan QR"),
               TabItem(icon: Image.asset("assets/images/rupee.png",
+                    color: Colors.white,
                     height: 19.5,
             width: 19.5,),
                   title: "My Money"),
-              TabItem(icon: Icon(CupertinoIcons.arrow_left_right_square),
+              TabItem(icon: Icon(CupertinoIcons.arrow_left_right_square,color: Colors.white,),
                   title: "History"),
               
         ]
